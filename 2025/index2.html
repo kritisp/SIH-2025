@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MindEase - Digital Mental Health Support for Students</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-start: #00796B;--primary-end: #004D40;--secondary-color: #E0F2F1;--background-color: #F8FAFC;--text-primary: #1E293B;--text-secondary: #475569;--accent-color: #00695C;}
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .calm-shadow {
+        box-shadow: 0 10px 25px -5px rgba(0, 121, 107, 0.1), 0 4px 6px -4px rgba(0, 121, 107, 0.1);
+      }
+      .calm-shadow-hover:hover {
+        box-shadow: 0 20px 30px -10px rgba(0, 77, 64, 0.15), 0 8px 12px -6px rgba(0, 77, 64, 0.15);
+      }
+      .btn-gradient {
+        background-image: linear-gradient(to right, var(--primary-start) 0%, var(--primary-end) 100%);
+      }
+       .btn-gradient-hover:hover {
+        background-image: linear-gradient(to right, var(--accent-color) 0%, var(--primary-end) 100%);
+      }
+      .text-gradient {
+        background: linear-gradient(to right, var(--primary-start), var(--primary-end));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center">
+<div class="flex-shrink-0 flex items-center gap-3">
+<svg class="h-9 w-9 text-[var(--primary-start)]" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z" fill="url(#logo-gradient)"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="logo-gradient" x1="4" x2="44" y1="24" y2="24">
+<stop stop-color="#00796B"></stop>
+<stop offset="1" stop-color="#004D40"></stop>
+</linearGradient>
+</defs>
+</svg>
+<span class="text-2xl font-bold text-[var(--text-primary)]">MindEase</span>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-1 lg:space-x-4">
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-start)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300" href="#">Home</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-start)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300" href="#">Chatbot</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-start)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300" href="#">Counselors</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-start)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300" href="#">Community</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-start)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300" href="#">Resources</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--primary-start)] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="hidden md:flex items-center space-x-4">
+<a class="text-[var(--primary-start)] px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[var(--secondary-color)] focus:outline-none focus:ring-4 focus:ring-[var(--primary-start)] focus:ring-opacity-30 transition-all duration-300 transform hover:scale-105" href="#">
+        Login
+    </a>
+<a class="btn-gradient text-white px-5 py-2.5 rounded-full text-sm font-semibold focus:outline-none focus:ring-4 focus:ring-[var(--primary-start)] focus:ring-opacity-30 transition-all duration-300 transform hover:scale-105 btn-gradient-hover" href="#">
+        Sign Up
+    </a>
+</div>
+</div>
+</nav>
+</header>
+<main class="flex-grow">
+<section class="py-24 md:py-40">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="text-center md:text-left">
+<h1 class="text-4xl md:text-6xl font-extrabold text-[var(--text-primary)] mb-6 leading-tight">
+                  Your Mental Wellness, <span class="text-gradient">Our Priority.</span>
+</h1>
+<p class="text-lg text-[var(--text-secondary)] mb-10 leading-relaxed max-w-xl mx-auto md:mx-0">
+                  MindEase offers confidential, 24/7 mental health support tailored for students. Connect with AI chatbots, professional counselors, and a supportive community, all in one place.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+<a class="btn-gradient text-white px-8 py-4 rounded-full text-base font-semibold focus:outline-none focus:ring-4 focus:ring-[var(--primary-start)] focus:ring-opacity-30 transition-all duration-300 transform hover:scale-105 btn-gradient-hover calm-shadow" href="#">
+                    Start Anonymous Chat
+                  </a>
+<a class="bg-white text-[var(--primary-start)] border border-[var(--secondary-color)] px-8 py-4 rounded-full text-base font-semibold hover:bg-[var(--secondary-color)] focus:outline-none focus:ring-4 focus:ring-[var(--primary-start)] focus:ring-opacity-30 transition-all duration-300 transform hover:scale-105 calm-shadow" href="#">
+                    Book a Session
+                  </a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-gradient-to-br from-teal-100 to-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+<img alt="Welcoming illustration of a person in a calm setting" class="rounded-3xl w-full h-auto object-cover calm-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpvFzWc8pI01gyYKRNiEPFE6J61lGS2NX9f3kDZ1L_5vOKci6edrrCqp0Nkm_6BsAPUQUQW6J7ogwM0KzFf5mPL4cGokPScLFOiOu4q4bUKQ8TiSaYQFgAOFeq3Rwh4YLa76aL6Bf85L7tPglH9G2E96GS-gmewUd2xCU5yMJ59ALrPLMffnhwAX4I4e7IjFqCinhhnPgannfzrwjYEiPR-twi251RjCO2XQPnPJYRfhUUlWetiP3gPl-7AIZJElQ6luKzWh-RENY"/>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] mb-4">Features Designed for You</h2>
+<p class="text-lg text-[var(--text-secondary)] max-w-3xl mx-auto">
+                We provide a comprehensive suite of tools to support your mental health journey.
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-[var(--background-color)] p-8 rounded-2xl calm-shadow calm-shadow-hover transition-all duration-300 transform hover:-translate-y-2">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-[var(--primary-start)] to-[var(--primary-end)] text-white mb-6">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-2">24/7 AI Chatbot</h3>
+<p class="text-[var(--text-secondary)]">
+                  Get immediate support with our AI chatbot, available anytime, anywhere. Discuss your concerns in a safe, anonymous space.
+                </p>
+</div>
+<div class="bg-[var(--background-color)] p-8 rounded-2xl calm-shadow calm-shadow-hover transition-all duration-300 transform hover:-translate-y-2">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-[var(--primary-start)] to-[var(--primary-end)] text-white mb-6">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-2">Anonymous Access</h3>
+<p class="text-[var(--text-secondary)]">
+                  Your privacy matters. Access our services without revealing your identity, ensuring a comfortable and secure experience.
+                </p>
+</div>
+<div class="bg-[var(--background-color)] p-8 rounded-2xl calm-shadow calm-shadow-hover transition-all duration-300 transform hover:-translate-y-2">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-[var(--primary-start)] to-[var(--primary-end)] text-white mb-6">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.28-1.256-.745-1.685A6.5 6.5 0 0012 15a6.5 6.5 0 00-6.255 3.315C5.28 18.744 5 19.347 5 20v2h5m0-12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-2">Professional Counseling</h3>
+<p class="text-[var(--text-secondary)]">
+                  Connect with licensed therapists specializing in student mental health. Schedule sessions at your convenience.
+                </p>
+</div>
+<div class="bg-[var(--background-color)] p-8 rounded-2xl calm-shadow calm-shadow-hover transition-all duration-300 transform hover:-translate-y-2">
+<div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-[var(--primary-start)] to-[var(--primary-end)] text-white mb-6">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 5h12M9 3v2m4 0v2M3 17h12M9 15v2M4 11h16M12 9v2M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold mb-2">Multilingual Support</h3>
+<p class="text-[var(--text-secondary)]">
+                  We speak your language. Access support in multiple languages, ensuring effective communication and understanding.
+                </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+</body></html>
